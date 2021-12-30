@@ -11,7 +11,7 @@ class SiteWebController{
 
     public function menus(int $id)
     {
-        require('./views/site-web-view/components/menus.php');
+        require('./views/site-web-view/components/posts.php');
     }
 
     public function contact()

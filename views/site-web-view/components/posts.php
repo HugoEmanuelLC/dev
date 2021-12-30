@@ -1,4 +1,4 @@
-<?php $descriptitle = 'Menu ' . $id; ?>
+<?php $descriptitle = 'posts ' . $id; ?>
 
 <?php ob_start(); ?>
 
