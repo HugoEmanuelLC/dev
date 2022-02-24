@@ -1,0 +1,63 @@
+*{
+    transition: 300ms;
+    box-sizing: border-box;
+}
+.page_bot{
+    // background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bloc_bot{
+    width: 500px;
+    height: 500px;
+    /* border: 4px red dotted; */
+    position: relative;
+}
+.bloc_bot div{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+.botimg{
+    background-image: url('../../../images/iconsLogos/logo_hc.png');
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    top: calc(50% - 25%);
+    left: calc(50% - 25%);
+    z-index: 2;
+}
+.botshadow{
+    background-color: gray;
+    top: calc(50% - 25%);
+    left: calc(50% - 25%);
+    z-index: 1;
+    opacity: 0.1;
+    box-shadow: 0 0 0 grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 0;
+    padding: 5px;
+}
+.bloc_bot:hover .botshadow{
+    width: 80%;
+    height: 80%;
+    top: calc(50% - 40%);
+    left: calc(50% - 40%);
+    z-index: 3;
+    box-shadow: 0 0 300px grey;
+    opacity: 1;
+    font-size: 20px;
+}
+.bloc_bot:hover .botimg{
+    opacity: 0.1;
+    width: 25%;
+    height: 25%;
+    top: calc(50% - 12.5%);
+    left: calc(50% - 12.5%);
+}
