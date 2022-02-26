@@ -1,5 +1,7 @@
-<?php require('./views/siteWeb/fragments/navbar.php'); ?>
+<?php require('../views/siteWeb/fragments/navbar.php'); ?>
 
+<?php $keywords = 'mots cles, mots cles'; ?>
+<?php $description = 'description de la page'; ?>
 <?php $descriptitle = 'Test'; ?>
 
 <?php ob_start(); ?>

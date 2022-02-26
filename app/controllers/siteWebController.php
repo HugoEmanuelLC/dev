@@ -2,12 +2,12 @@
 
 namespace App\controllers;
 
-class siteWebController{
+class SiteWebController{
 
     public function accueil(){
 
-        require('./views/siteWeb/layout/accueil.php');
-        require('./views/main.php');
+        require('../views/siteWeb/layout/accueil.php');
+        require('../views/main.php');
         
     }
 
@@ -15,8 +15,8 @@ class siteWebController{
 
     public function test(){
 
-        require('./views/siteWeb/layout/test.php');
-        require('./views/main.php');
+        require('../views/siteWeb/layout/test.php');
+        require('../views/main.php');
         
     }
 
@@ -25,8 +25,8 @@ class siteWebController{
     public function idTest(int $id){
 
         $back = "../";
-        require('./views/siteWeb/layout/idTest.php');
-        require('./views/main.php');
+        require('../views/siteWeb/layout/idTest.php');
+        require('../views/main.php');
         
     }
 

@@ -1,5 +1,7 @@
-<?php require('./views/siteWeb/fragments/navbar.php'); ?>
+<?php require('../views/siteWeb/fragments/navbar.php'); ?>
 
+<?php $keywords = 'mots cles, mots cles'; ?>
+<?php $description = 'description de la page'; ?>
 <?php $descriptitle = 'Acceuil'; ?>
 
 <?php ob_start(); ?>
@@ -11,6 +13,7 @@
             <div class="botimg" ></div>
             <div class="botshadow">
                 <p>Modele pre-prepare !</p>
+                <p>Maintenance en continue ;-)</p>
             </div>
         </div>
     </div>
