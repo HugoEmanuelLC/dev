@@ -19,6 +19,6 @@ $navbar = '<div class="navbar">
     <li><a class="'.$accueil0. $accueil1.'" href="'.$back.'accueil">ACCUEIL</a></li>
     <li><a class="'.$test.'" href="'.$back.'test">TEST</a></li>
     <li><a class="'.$testid.'" href="'.$back.'test/85">ID TEST</a></li>
-    <li><a class="'.$errorTest.'" href="'.$back.'errorTest">ID TEST</a></li>
+    <li><a class="'.$errorTest.'" href="'.$back.'errorTest">test error</a></li>
 </ul>
 </div>';

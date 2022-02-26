@@ -1,6 +1,6 @@
 {
     "name": "hugoclavinas/hc85",
-    "description": "site web personel",
+    "description": "modele pre-preparer",
     "type": "project",
     "autoload": {
         "psr-4": {

@@ -1,9 +1,10 @@
 // si je veux creer mon propre autoload:
 --- sql_autoload_register()
-ex: sql_autoload_register(){
-        $path = __DIR__ .'/' .str_replace('\\','/',$class) .'.php';
-        (file_exists($path))? require $path : false;
-    }
+ex: 
+sql_autoload_register(){
+    $path = __DIR__ .'/' .str_replace('\\','/',$class) .'.php';
+    (file_exists($path))? require $path : false;
+}
 
 
 
@@ -12,4 +13,5 @@ ex: sql_autoload_register(){
     2°pour quel caracter 
     3°dans quel variable
 --- str_replace('\\', '/', $variable)
-ex: $path = __DIR__ .'/' .str_replace('\\','/',$class) .'.php';
+ex: 
+$path = __DIR__ .'/' .str_replace('\\','/',$class) .'.php';
