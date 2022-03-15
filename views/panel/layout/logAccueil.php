@@ -1,6 +1,6 @@
 
 
-<?php require('../views/panel/fragments/navbar.php'); ?>
+<?php require('../views/siteWeb/fragments/navbar.php'); ?>
 
 <?php 
 $keywords = 'mots cles, mots cles'; 
