@@ -5,12 +5,12 @@ namespace App\models\connectionDB;
 use PDO;
 use PDOException;
 
-class connMySql{
+class ConnMySql{
 
-    function connMySql(){
+    public function connMySql(){
         
         $host = "localhost";
-        $dbname = "waw_momo";
+        $dbname = "hc85";
         $login = 'root';
         $pswr = '';
 

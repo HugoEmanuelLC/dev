@@ -1,15 +1,22 @@
 *{
     margin: 0;
     padding: 0;
+    transition: 300ms;
+    box-sizing: border-box;
 }
 li{
     list-style: none;
 }
-li a{
-    padding: 5px 15px;
+a{
+    text-decoration: none;
 }
-li a:hover{
-    background-color: rgb(0, 128, 0, 0.5);
+li, a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin-top: 30px;
 }
 .page{
     display: flex;

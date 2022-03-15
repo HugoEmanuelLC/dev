@@ -15,3 +15,14 @@ sql_autoload_register(){
 --- str_replace('\\', '/', $variable)
 ex: 
 $path = __DIR__ .'/' .str_replace('\\','/',$class) .'.php';
+
+
+//Hash:
+---$psw = '1234';
+---$hash = password_hash($pasw, PASSWORD_BCRYPT, ['cost' => 10]);
+---password_verify($pasw, $hash);
+//en cas de changement du password_hash() ex: ['cost' => 10] -> ['cost' => 13]
+ça seras un genre refresh.
+---password_needs_reghash($pasw, $hash);
+
+

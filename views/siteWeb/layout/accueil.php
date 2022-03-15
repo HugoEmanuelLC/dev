@@ -1,12 +1,17 @@
+<?php 
+session_start();
+session_destroy(); 
+?>
+
 <?php require('../views/siteWeb/fragments/navbar.php'); ?>
 
 <?php $keywords = 'mots cles, mots cles'; ?>
 <?php $description = 'description de la page'; ?>
-<?php $descriptitle = 'Acceuil'; ?>
+<?php $descriptitle = 'Accueil'; ?>
 
 <?php ob_start(); ?>
 
-<h1>Accueil</h1>
+<h1><?=$descriptitle?></h1>
 
 <div class="page_bot">
         <div class="bloc_bot">

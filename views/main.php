@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -12,6 +16,7 @@
     <link rel="icon" type="image/png" href="<?= $back = (isset($back)) ? $back : false ?>public/images/iconsLogos/logo_hc.png" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
     <link rel="stylesheet" href="<?= $back = (isset($back)) ? $back : false ?>public/styles/siteWeb/css/style.css">
+    <link rel="stylesheet" href="<?= $back = (isset($back)) ? $back : false ?>public/styles/panel/css/style.css">
 
     <title>Modele pre-prepare | <?= $descriptitle ?></title>
 </head>

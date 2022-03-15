@@ -1,19 +1,19 @@
 <?php
-
 namespace App\authentification;
 
-use App\models\connectionDB\connMySql;
+use App\models\connectionDB\ConnMySql;
+use Exception;
 
-class Auth extends connMySql
+class Auth extends ConnMySql
 {
-    private string $user;
-    private string $password;
-
-    public function __construct(string $usr, string $psw)
+    public function connection($username,$password)
     {
-        $this->user = $usr;
-        $this->password = $psw;
+        $conn = new ConnMySql();
+        $dbd = $conn->connMySql();
+        $req = "SELECT * FROM `auth` WHERE `username`=? AND `password`=?";
+        $resultReq = $dbd->prepare($req);
+        $resultReq->execute(array($username,$password));
+		$reponse=$resultReq->fetchAll();
+        return $reponse;
     }
-
-    
 }
