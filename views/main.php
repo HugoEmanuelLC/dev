@@ -1,6 +1,3 @@
-<?php
-
-?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -15,20 +12,23 @@
 <!---->
     <link rel="icon" type="image/png" href="<?= $back = (isset($back)) ? $back : false ?>public/images/iconsLogos/logo_hc.png" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
-    <link rel="stylesheet" href="<?= $back = (isset($back)) ? $back : false ?>public/styles/siteWeb/css/style.css">
-    <link rel="stylesheet" href="<?= $back = (isset($back)) ? $back : false ?>public/styles/panel/css/style.css">
+    <!--<link rel="stylesheet" href="<?= $back = (isset($back)) ? $back : false ?>public/styles/siteWeb/css/style.css">-->
+    <!--<link rel="stylesheet" href="<?= $back = (isset($back)) ? $back : false ?>public/styles/panel/css/style.css">-->
+
+    <link rel="stylesheet" href="<?= SCRIPTS . 'styles/siteWeb/css' . DIRECTORY_SEPARATOR . 'style.css' ?>">
+    <link rel="stylesheet" href="<?= SCRIPTS . 'styles/panel/css' . DIRECTORY_SEPARATOR . 'style.css' ?>">
 
     <title>Modele pre-prepare | <?= $descriptitle ?></title>
 </head>
 
 <body>
-    <div class="page">
+<div class="page">
         
-        <?=$navbar = (isset($navbar)) ? $navbar : false ?>
+    <?=$navbar = (isset($navbar)) ? $navbar : false ?>
 
-        <?= $content = (isset($content)) ? $content : "lien interrompue" ?>
+    <?= $content = (isset($content)) ? $content : "lien interrompue" ?>
 
-    </div>
+</div>
 
 </body>
 </html>

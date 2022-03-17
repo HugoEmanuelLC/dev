@@ -1,14 +1,14 @@
-
-
-<?php require('../views/siteWeb/fragments/navbar.php'); ?>
-
 <?php 
+
 $keywords = 'mots cles, mots cles'; 
 $description = 'description de la page'; 
 $descriptitle = 'Panel de configuration'; 
+
+require('../views/siteWeb/fragments/navbar.php'); 
+
 ?>
 
-<?php ob_start(); ?>
+
 
 <div class="panel">
     <h1><?= $descriptitle ?></h1>
@@ -34,4 +34,3 @@ $descriptitle = 'Panel de configuration';
 
 
 
-<?php $content = ob_get_clean(); ?>

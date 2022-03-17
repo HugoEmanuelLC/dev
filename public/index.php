@@ -4,6 +4,9 @@ use Router\Routes;
 
 require_once realpath("../vendor/autoload.php");
 
+define('VIEWS', dirname(__DIR__) . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR);
+define('SCRIPTS', dirname($_SERVER['SCRIPT_NAME']) . DIRECTORY_SEPARATOR);
+
 $route = new Routes($_GET['url']);
 
 //site web

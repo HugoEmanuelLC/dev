@@ -5,18 +5,22 @@ namespace App\controllers;
 use App\authentification\Auth;
 use App\models\connectionDB\ConnMySql;
 
-class PanelController extends ConnMySql
+class PanelController extends ConnMySql 
 {
     private $usr;
     private $psw;
     public $reponseIdentification;
     public $msg;
     public $sess;
+    public $Controller;
 
     // public $urlHomePanel;
 
     public function __construct()
     {
+
+        $this->Controller = new Controller();
+
         if (session_status() === PHP_SESSION_NONE) {
 
             session_start();
@@ -106,8 +110,10 @@ class PanelController extends ConnMySql
         $this->reponseIdentification = 0;
         var_dump("variable".$this->reponseIdentification);
 
-        require('../views/panel/layout/logAccueil.php');
-        require('../views/main.php');
+        // require('../views/panel/layout/logAccueil.php');
+        // require('../views/main.php');
+
+        return $this->Controller->view('panel.layout.logAccueil');
     }
 
 
@@ -128,8 +134,9 @@ class PanelController extends ConnMySql
                 var_dump($_COOKIE["client"]);
                 var_dump("variable".$this->reponseIdentification);
 
-                require('../views/panel/layout/homePanel.php');
-                require('../views/main.php');
+                // require('../views/panel/layout/homePanel.php');
+                // require('../views/main.php');
+                return $this->Controller->view('panel.layout.homePanel');
 
         } else {
 

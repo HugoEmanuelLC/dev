@@ -12,10 +12,10 @@ class Routes{
         $this->url = trim($url, '/');
     }
 
-    public function show()
-    {
-        echo $this->url;
-    }
+    // public function show()
+    // {
+    //     echo $this->url;
+    // }
 
     public function get(string $path, string $action)
     {
@@ -34,7 +34,7 @@ class Routes{
 
             if ($route->matches($this->url)) {
                 
-                $route->execute();
+                return $route->execute();
             }
         }
 

@@ -1,11 +1,13 @@
-<?php require('../views/siteWeb/fragments/navbar.php'); ?>
+<?php 
 
-<?php $keywords = 'mots cles, mots cles'; ?>
-<?php $description = 'description de la page'; ?>
-<?php $descriptitle = 'ID test'; ?>
+$keywords = 'mots cles, mots cles';
+$description = 'description de la page';
+$descriptitle = 'ID test'; 
+$back = "../";
 
-<?php ob_start(); ?>
+require('../views/siteWeb/fragments/navbar.php');
+
+?>
 
 <h1><?=$descriptitle?> : <?= $id ?></h1>
 
-<?php $content = ob_get_clean(); ?>

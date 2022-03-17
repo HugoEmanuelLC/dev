@@ -1,13 +1,16 @@
-<?php $sess = session_start(); ?>
+<?php 
 
-<?php require('../views/panel/fragments/navbar.php'); ?>
+$keywords = 'mots cles, mots cles';
+$description = 'description de la page';
+$descriptitle = 'panel test';
 
-<?php $keywords = 'mots cles, mots cles'; ?>
-<?php $description = 'description de la page'; ?>
-<?php $descriptitle = 'panel test'; ?>
+require('../views/panel/fragments/navbar.php'); 
 
-<?php ob_start(); ?>
+?>
+
+
+
+
 
 <h1><?=$descriptitle?> </h1>
 
-<?php $content = ob_get_clean(); ?>

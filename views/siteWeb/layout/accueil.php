@@ -9,7 +9,8 @@ session_destroy();
 <?php $description = 'description de la page'; ?>
 <?php $descriptitle = 'Accueil'; ?>
 
-<?php ob_start(); ?>
+<?php 
+//ob_start(); ?>
 
 <h1><?=$descriptitle?></h1>
 
@@ -23,4 +24,5 @@ session_destroy();
         </div>
     </div>
 
-<?php $content = ob_get_clean(); ?>
+<?php 
+//$content = ob_get_clean(); ?>
