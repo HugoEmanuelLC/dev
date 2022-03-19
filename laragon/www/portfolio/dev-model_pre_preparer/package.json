@@ -1,0 +1,21 @@
+{
+  "name": "hc85",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sassSiteWeb": "sass --watch ./public/styles/siteWeb/main.scss:./public/styles/siteWeb/css/style.css --style compressed",
+    "sassPanel": "sass --watch ./public/styles/panel/main.scss:./public/styles/panel/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HugoEmanuelLC/dev.git"
+  },
+  "author": "hugo clavinas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HugoEmanuelLC/dev/issues"
+  },
+  "homepage": "https://github.com/HugoEmanuelLC/dev#readme"
+}

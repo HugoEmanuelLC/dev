@@ -1,0 +1,22 @@
+.navbar{
+    background-color: red;
+    width: 100%;
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    li a{
+        padding: 5px 15px;
+        color: white;
+    }
+    li a:hover{
+        background-color: rgb(153, 204, 255);
+        color: black;
+    }
+    .active{
+        background-color: rgb(153, 204, 255);
+        color: black;
+        font-weight: bold;
+    }
+}
