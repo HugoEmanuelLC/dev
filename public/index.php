@@ -14,7 +14,7 @@ $route = new Routes($_GET['url']);
 $route->get('/', 'App\controllers\siteWebController@accueil');
 $route->get('/accueil', 'App\controllers\siteWebController@accueil');
 $route->get('/test', 'App\controllers\siteWebController@test');
-$route->get('/test/:id', 'App\controllers\siteWebController@idTest');
+$route->get('/test/:params', 'App\controllers\siteWebController@idTest');
 
 //panel de configuration
 $route->get('my-panel-log', '\App\controllers\PanelController@panelLog');

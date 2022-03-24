@@ -53,6 +53,8 @@ class PanelController extends ConnMySql
                 
             if (!empty($reponse)) {
 
+                $this->psw = null;
+
                 setcookie("client", "true", time()+3600,"/","",1);
                 $this->reponseIdentification = setcookie("client", "true", time()+3600,"/","",1);
                 setcookie("user", "$this->usr", time()+3600);
@@ -82,11 +84,12 @@ class PanelController extends ConnMySql
 
     public function deconnect()
     {
-        session_unset();
-        session_destroy();
 
         setcookie("client", "", time()-3600,"/","",0);
         unset($_COOKIE["client"]);
+
+        session_unset();
+        session_destroy();
 
         $_SESSION["clientAuth"] = false;
 
@@ -129,10 +132,17 @@ class PanelController extends ConnMySql
             // $_COOKIE["client"] === "true"
             ){
 
+                setcookie("client", "", time()-3600,"/","",0);
+                unset($_COOKIE["client"]);
+
+                setcookie("auth", "", time()+3600,"/","",1);
+
                 var_dump($this->usr . $this->psw);
                 var_dump($_SESSION["clientAuth"]);
                 var_dump($_COOKIE["client"]);
                 var_dump("variable".$this->reponseIdentification);
+
+                $this->psw = null;
 
                 // require('../views/panel/layout/homePanel.php');
                 // require('../views/main.php');

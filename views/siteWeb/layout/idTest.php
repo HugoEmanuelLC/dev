@@ -9,5 +9,5 @@ require('../views/siteWeb/fragments/navbar.php');
 
 ?>
 
-<h1><?=$descriptitle?> : <?= $id ?></h1>
+<h1><?=$descriptitle?> : <?= $id; ?></h1>
 

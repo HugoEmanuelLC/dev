@@ -28,13 +28,12 @@ class SiteWebController extends Controller
 
     
 
-    public function idTest(int $id)
+    public function idTest(int $params)
     {
-
         // $back = "../";
         // require('../views/siteWeb/layout/idTest.php');
         // require('../views/main.php');
-        return $this->view('siteWeb.layout.idTest');
+        return $this->view('siteWeb.layout.idTest', [$params]);
         
     }
 
