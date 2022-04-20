@@ -9,7 +9,7 @@ $URLaccueil = "accueil";
 $URLtest = "test";
 $URLtestID = "test/85";
 $URLtestError = "errorTest";
-$URLpanel = "my-panel-log";
+$URLdashboard = "dashboard";
 
 
 //pour accionner la coulleur par default quand le bouttom est clique
@@ -27,6 +27,6 @@ $navbar = '<div class="navbar">
     <li><a class="'.$test.'" href="'.$back.$URLtest.'">TEST</a></li>
     <li><a class="'.$testid.'" href="'.$back.$URLtestID.'">ID TEST</a></li>
     <li><a class="'.$errorTest.'" href="'.$back.$URLtestError.'">test error</a></li>
-    <li><a class="'.$errorTest.'" href="'.$back.$URLpanel.'">PANEL</a></li>
+    <li><a class="'.$errorTest.'" href="'.$back.$URLdashboard.'">dashboard</a></li>
 </ul>
 </div>';

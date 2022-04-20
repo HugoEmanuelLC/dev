@@ -20,6 +20,7 @@ $route->get('/test/:params', 'App\controllers\siteweb\CntrlSiteWeb@testId');
 //DASHBOARD
 $route->get('/dashboard', 'App\controllers\dashboard\Cntrldash@accueil');
 $route->get('/dashboard/accueil', 'App\controllers\dashboard\Cntrldash@accueil');
+$route->post('/dashboard/login', 'App\controllers\dashboard\Cntrldash@login');
 $route->get('/dashboard/test/:params', 'App\controllers\dashboard\Cntrldash@testId');
 
 $route->run();

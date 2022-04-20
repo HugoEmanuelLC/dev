@@ -18,7 +18,7 @@ $accueil0 = (isset($_GET['url']) && $_GET['url'] == '') ? 'active' : false;
 $accueil1 = (isset($_GET['url']) && $_GET['url'] == 'accueil') ? 'active' : false;
 // $test = (isset($_GET['url']) && $_GET['url'] == 'test') ? 'active' : false;
 $testid = (isset($_GET['url']) && $_GET['url'] == "test/$id") ? 'active' : false;
-// $errorTest = (isset($_GET['url']) && $_GET['url'] == "errorTest") ? 'active' : false;  //error test ( pas de route dans l'index )
+$errorTest = (isset($_GET['url']) && $_GET['url'] == "errorTest") ? 'active' : false;  //error test ( pas de route dans l'index )
 
 
 $navbar = '<div class="navbar">

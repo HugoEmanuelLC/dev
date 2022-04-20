@@ -12,6 +12,11 @@ class CntrlDash extends Controller
         return $this->view('dashboard.layout.accueil');
     }
 
+    public function login()
+    {
+        return $this->view('dashboard.services.auth');
+    }
+
     public function testId(int $params)
     {
         return $this->view('dashboard.layout.pageTestId', [$params]);
