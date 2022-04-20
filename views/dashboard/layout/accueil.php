@@ -8,11 +8,16 @@ $descriptitle = 'Accueil | Dashboard';
 
 // require('../views/dashboard/fragments/navbar.php');
 
-if (isset($_COOKIE["client"])) {
-    setcookie("client", "", time()-3600,"/","",0);
+if (isset($_COOKIE["client"]) ) {
+
+    setcookie("client", "false", time()-3600);
     unset($_COOKIE["client"]);
-    setcookie("notclient", "true", time()+3600,"/","",1);
+
+    echo "je suis le IF";
+    
 }else {
+    setcookie("client", "false", time()-3600);
+    echo "je suis le else";
 }
 ?>
 

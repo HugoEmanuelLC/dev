@@ -1,3 +1,5 @@
+<?= $session = (isset($session)) ? $session : false ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
