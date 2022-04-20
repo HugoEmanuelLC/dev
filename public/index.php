@@ -14,6 +14,12 @@ $route = new Routes($_GET['url']);
 
 //SITE WEB
 $route->get('/', 'App\controllers\siteweb\CntrlSiteWeb@accueil');
+$route->get('/accueil', 'App\controllers\siteweb\CntrlSiteWeb@accueil');
 $route->get('/test/:params', 'App\controllers\siteweb\CntrlSiteWeb@testId');
+
+//DASHBOARD
+$route->get('/dashboard', 'App\controllers\dashboard\Cntrldash@accueil');
+$route->get('/dashboard/accueil', 'App\controllers\dashboard\Cntrldash@accueil');
+$route->get('/dashboard/test/:params', 'App\controllers\dashboard\Cntrldash@testId');
 
 $route->run();
