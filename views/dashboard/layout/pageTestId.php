@@ -2,7 +2,7 @@
 
 $keywords = 'mots cles, mots cles';
 $description = 'description de la page';
-$descriptitle = 'ID test'; 
+$descriptitle = 'ID test | Dashboard'; 
 $back = "../";
 
 require('../views/dashboard/fragments/navbar.php');

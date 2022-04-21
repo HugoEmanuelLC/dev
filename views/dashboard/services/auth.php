@@ -8,11 +8,11 @@ $result = $verif->veriffication($_POST['usr'], $_POST['psw']);
 
 if (!empty($result)) {
 
-    // $session = session_start();
+    $session = session_start();
 
-    setcookie("client", "true", time()+3600);
+    // setcookie("client", "true", time()+3600);
 
-    // $_SESSION["client"] = true;
+    $_SESSION["client"] = 1;
     
     header('Location:http://localhost/projets/model-04-2022/dashboard/test/85');
 
