@@ -7,6 +7,7 @@ $description = 'description de la page';
 $descriptitle = 'Accueil | Dashboard';
 
 // require('../views/dashboard/fragments/navbar.php');
+require_once('../views/dashboard/services/deconnAuth.php');
 
 // if (isset($_COOKIE["client"]) ) {
 
@@ -23,7 +24,7 @@ $descriptitle = 'Accueil | Dashboard';
 
 <?php //ob_start(); ?>
 
-<h1><?=$descriptitle?></h1>
+<h1><?=$descriptitle?> <?php  ?> </h1>
 
 <h3><?= $msg = (isset($_GET["msg"])) ? $_GET["msg"] : false ?></h3>
 

@@ -1,4 +1,7 @@
-<?= $session = (isset($session)) ? $session : false ?>
+<?php 
+session_start();
+// $session = (isset($session)) ? $session : false 
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -19,7 +22,7 @@
     <link rel="stylesheet" href="<?= SCRIPTS . 'styles/siteWeb/css' . DIRECTORY_SEPARATOR . 'style.css' ?>">
     <link rel="stylesheet" href="<?= SCRIPTS . 'styles/panel/css' . DIRECTORY_SEPARATOR . 'style.css' ?>">
 
-    <title>Modele pre-prepare | <?= $descriptitle ?></title>
+    <title>Modele 04 2022 | <?= $descriptitle ?></title>
 </head>
 
 <body>

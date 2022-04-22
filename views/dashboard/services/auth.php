@@ -8,13 +8,9 @@ $result = $verif->veriffication($_POST['usr'], $_POST['psw']);
 
 if (!empty($result)) {
 
-    $session = session_start();
-
-    // setcookie("client", "true", time()+3600);
-
-    $_SESSION["client"] = 1;
+    $_SESSION["auth"] = "auth";
     
-    header('Location:http://localhost/projets/model-04-2022/dashboard/test/85');
+    header('Location:http://localhost/projets/model-04-2022/dashboard/loading');
 
 }else{
 
