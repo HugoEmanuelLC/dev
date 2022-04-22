@@ -8,7 +8,7 @@ $descriptitle = 'ID test | Dashboard';
 $back = "../";
 
 require('../views/dashboard/fragments/navbar.php');
-require('../views/dashboard/services/verifAuth.php');
+// require('../views/dashboard/services/verifAuth.php');
 
 ?>
 

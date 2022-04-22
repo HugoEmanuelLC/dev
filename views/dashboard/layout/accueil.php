@@ -7,19 +7,9 @@ $description = 'description de la page';
 $descriptitle = 'Accueil | Dashboard';
 
 // require('../views/dashboard/fragments/navbar.php');
-require_once('../views/dashboard/services/deconnAuth.php');
+// require_once('../views/dashboard/services/deconnAuth.php');
 
-// if (isset($_COOKIE["client"]) ) {
 
-//     setcookie("client", "false", time()-3600);
-//     unset($_COOKIE["client"]);
-
-//     echo "je suis le IF";
-    
-// }else {
-//     setcookie("client", "false", time()-3600);
-//     echo "je suis le else";
-// }
 ?>
 
 <?php //ob_start(); ?>

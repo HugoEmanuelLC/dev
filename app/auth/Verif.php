@@ -28,7 +28,7 @@ class Verif extends Controller
     {
         $conn = new ConnMySql;
         $pdo = $conn->connMySql();
-        $req = "SELECT * FROM `admin` WHERE `usr`=? AND `psw`=?";
+        $req = "SELECT * FROM `auth` WHERE `username`=? AND `password`=?";
         $resultReq = $pdo->prepare($req);
         $resultReq->execute(array($username,$password));
 		$reponse=$resultReq->fetchAll();
