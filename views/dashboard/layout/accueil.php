@@ -17,6 +17,8 @@ require_once('../views/dashboard/services/deconnAuth.php');
 
 <h1><?=$descriptitle?> <?php  ?> </h1>
 
+<a href="http://localhost/projets/model-04-2022/"> <=Retour </a>
+
 <h3><?= $msg = (isset($_GET["msg"])) ? $_GET["msg"] : false ?></h3>
 
 <form action="<?= $http; ?>" method="post">
