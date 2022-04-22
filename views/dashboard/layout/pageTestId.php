@@ -6,6 +6,8 @@ $keywords = 'mots cles, mots cles';
 $description = 'description de la page';
 $descriptitle = 'ID test | Dashboard'; 
 $back = "../";
+$backUrlStyle = "../../";
+$page_dashboard = "page_dash";  //control dediv parent main.php
 
 require('../views/dashboard/fragments/navbar.php');
 require('../views/dashboard/services/verifAuth.php');

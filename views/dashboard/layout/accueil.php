@@ -3,9 +3,14 @@ session_start();
 $msg = "";
 $http = "https://localhost/projets/model-04-2022/dashboard/login";
 
+//HEAD
 $keywords = 'mots cles, mots cles';
 $description = 'description de la page';
 $descriptitle = 'Accueil | Dashboard';
+
+$backUrlStyle = "../";
+$page_dashboard = "page_dash" ." testCss";  //control de div parent main.php
+$_SESSION["background_image"] =  'black-stars.jpg' ;    //fond d'ecran de div parent main.php
 
 // require('../views/dashboard/fragments/navbar.php');
 require_once('../views/dashboard/services/deconnAuth.php');

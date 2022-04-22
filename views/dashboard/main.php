@@ -18,16 +18,14 @@ $ICON = IMAGES . 'images' . DIRECTORY_SEPARATOR . 'Loading_icon.gif' ;
 <!---->
     <link rel="icon" type="image/png" href="<?= $ICON; ?>" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
-    <!--<link rel="stylesheet" href="<?= $back = (isset($back)) ? $back : false ?>public/styles/siteWeb/css/style.css">-->
-    <!--<link rel="stylesheet" href="<?= $back = (isset($back)) ? $back : false ?>public/styles/panel/css/style.css">-->
 
-    <link rel="stylesheet" href="<?= SCRIPTS . 'styles/siteWeb/css' . DIRECTORY_SEPARATOR . 'style.css' ?>">
+    <link rel="stylesheet" href="<?= SCRIPTS . 'styles/dashboard/css' . DIRECTORY_SEPARATOR . 'style.css' ?>">
 
     <title>Modele 04 2022 | <?= $descriptitle ?></title>
 </head>
 
 <body>
-<div class="<?= $page_dashboard; ?>" style="background-image: url('');">
+<div class="<?= $page_dashboard; ?>" style="background-image: url('<?= $backUrlStyle; ?>public/images/dashboard/background/black-stars.jpg');">
 
     <?=$navbar = (isset($navbar)) ? $navbar : false ?>
 

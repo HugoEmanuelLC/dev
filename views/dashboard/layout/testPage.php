@@ -5,7 +5,8 @@ session_start();
 $keywords = 'mots cles, mots cles';
 $description = 'description de la page';
 $descriptitle = 'Test page | Dashboard'; 
-// $back = "../";
+$page_dashboard = "page_dash";  //control dediv parent main.php
+$backUrlStyle = "../";
 
 require('../views/dashboard/fragments/navbar.php');
 require('../views/dashboard/services/verifAuth.php');

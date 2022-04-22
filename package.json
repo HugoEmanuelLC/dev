@@ -4,7 +4,9 @@
   "description": "model creer en 2022",
   "main": "index.php",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sassDashboard": "sass --watch ./public/styles/dashboard/main.scss:./public/styles/dashboard/css/style.css --style compressed",
+    "sassSiteWeb": "sass --watch ./public/styles/siteweb/main.scss:./public/styles/siteweb/css/style.css --style compressed"
   },
   "repository": {
     "type": "git",

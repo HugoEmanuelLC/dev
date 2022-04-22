@@ -9,7 +9,7 @@ $URLaccueil = "accueil";
 $URLtest = "test";
 $URLtestID = "test/85";
 $URLtestError = "errorTest";
-$URLdashboard = "dashboard";
+$URLdashboard = "dashboard/";
 
 
 //pour accionner la coulleur par default quand le bouttom est clique

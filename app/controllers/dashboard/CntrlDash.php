@@ -9,27 +9,27 @@ class CntrlDash extends Controller
 
     public function accueil()
     {
-        return $this->view('dashboard.layout.accueil');
+        return $this->viewDash('dashboard.layout.accueil');
     }
 
     public function login()
     {
-        return $this->view('dashboard.services.auth');
+        return $this->viewDash('dashboard.services.auth');
     }
 
     public function loading()
     {
-        return $this->view('dashboard.services.loading');
+        return $this->viewDash('dashboard.services.loading');
     }
 
     public function testId(int $params)
     {
-        return $this->view('dashboard.layout.pageTestId', [$params]);
+        return $this->viewDash('dashboard.layout.pageTestId', [$params]);
     }
 
     public function testPage()
     {
-        return $this->view('dashboard.layout.testPage');
+        return $this->viewDash('dashboard.layout.testPage');
     }
 
 }

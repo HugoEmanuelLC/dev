@@ -1,0 +1,5 @@
+---npm install -g sass
+
+---sass --watch ./public/styles/dashboard/main.scss:./public/styles/dashboard/css/style.css --style compressed
+
+---npm run sass
