@@ -1,4 +1,5 @@
 <?php
+session_start();
 $msg = "";
 $http = "https://localhost/projets/model-04-2022/dashboard/login";
 
@@ -7,7 +8,7 @@ $description = 'description de la page';
 $descriptitle = 'Accueil | Dashboard';
 
 // require('../views/dashboard/fragments/navbar.php');
-// require_once('../views/dashboard/services/deconnAuth.php');
+require_once('../views/dashboard/services/deconnAuth.php');
 
 
 ?>

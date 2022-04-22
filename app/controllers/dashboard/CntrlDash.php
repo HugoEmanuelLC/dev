@@ -24,7 +24,6 @@ class CntrlDash extends Controller
 
     public function testId(int $params)
     {
-        var_dump($_SESSION["auth"]);
         return $this->view('dashboard.layout.pageTestId', [$params]);
     }
 

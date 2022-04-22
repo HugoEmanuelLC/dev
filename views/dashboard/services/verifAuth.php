@@ -1,36 +1,17 @@
 <?php
-var_dump($_SESSION["auth"]);
-// $session = session_start();
-
-// if (isset($_SESSION["client"]) AND $_SESSION["client"] == false) {
-
-//     // setcookie("client", "false", time()-3600);
-//     // unset($_COOKIE["client"]);
     
-//     header('Location:http://localhost/projets/model-04-2022/dashboard/');
+if (!isset($_SESSION["AUTH"])) {
+        
+    header('Location:http://localhost/projets/model-04-2022/dashboard?msg=je suis passé par l IF...');  
 
-//     echo "je suis le IF";
-
-// }
-// // elseif (!isset($_SESSION["client"]) || isset($_COOKIE["client"]) AND $_COOKIE["client"] == 0) {
+    echo "je suis dans l' IF";
+}
+elseif (isset($_SESSION["AUTH"]) && $_SESSION["AUTH"] == "false") {
+        
+    header('Location:http://localhost/projets/model-04-2022/dashboard?msg=je suis passé par l ELSE IF...');
+}
+else{
+    echo "je suis dans l' ELSE";
+}
     
-// //         header('Location:http://localhost/projets/model-04-2022/dashboard?msg=vous devait vous logues');
-
-// //         echo "je suis le elseIF";
-// // }
-// elseif (isset($_COOKIE["client"]) AND $_COOKIE["client"] == 0) {
-
-//     header('Location:http://localhost/projets/model-04-2022/dashboard?msg=vous devait vous logues');
-
-//     echo "je suis le elseIF";
-// }
-// else {
-
-//     // $_SESSION["client"] = false;
-//     setcookie("client", "1", time()+3600);
-
-//     echo "je suis le else";
-
-// }
-
 ?>

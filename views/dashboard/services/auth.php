@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 use App\auth\Verif;
 
@@ -8,7 +9,7 @@ $result = $verif->veriffication($_POST['usr'], $_POST['psw']);
 
 if (!empty($result)) {
 
-    $_SESSION["auth"] = "auth";
+    $_SESSION["AUTH"] = "auth";
     
     header('Location:http://localhost/projets/model-04-2022/dashboard/loading');
 
