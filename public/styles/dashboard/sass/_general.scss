@@ -2,16 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: 250ms;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .page_dash{
     min-height: 100vh;
-    background-color: chocolate;
+    background-color: black;
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 .testCss h1{
-    color: red;
+    color: darkred;
+}
+
+a{
+    text-decoration: none;
+    padding: 4px;
+    color: white;
 }

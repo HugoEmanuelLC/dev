@@ -1,0 +1,61 @@
+.contenue_page, form, .contenue_page div{
+    display: flex;
+}
+
+.dash_shadow{
+    box-shadow: 2px 2px 2px rgb(128, 128, 128);
+    background-color: rgb(128, 128, 128, 0.5);
+}
+
+.contenue_page{
+    // border: 3px solid red;
+    min-height: 100vh;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+    .a_retour{
+        border-radius: 10px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+    .a_retour:hover{
+        box-shadow: 0 0 0 rgb(128, 128, 128);
+        background-color: rgb(128, 128, 128, 0.5);
+        padding: 3px;
+        margin: 1px;
+        font-size: 1.4rem;
+    }
+
+    div{
+        flex-direction: column;
+    }
+
+    form{
+        border-radius: 20px;
+        padding: 20px;
+        flex-direction: column;
+        margin-top: 30vh;
+        width: 80%;
+        max-width: 800px;
+
+        input, button{
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px 0;
+            border: solid 1px black;
+        }
+
+        button{
+            background-color: aqua;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: greenyellow;
+        }
+    }
+}
+
+

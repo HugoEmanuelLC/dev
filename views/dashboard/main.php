@@ -18,7 +18,6 @@ $ICON = IMAGES . 'images' . DIRECTORY_SEPARATOR . 'Loading_icon.gif' ;
 <!---->
     <link rel="icon" type="image/png" href="<?= $ICON; ?>" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
-
     <link rel="stylesheet" href="<?= SCRIPTS . 'styles/dashboard/css' . DIRECTORY_SEPARATOR . 'style.css' ?>">
 
     <title>Modele 04 2022 | <?= $descriptitle ?></title>

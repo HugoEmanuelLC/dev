@@ -7,11 +7,14 @@ $description = 'description de la page';
 $descriptitle = 'ID test | Dashboard'; 
 $back = "../";
 $backUrlStyle = "../../";
-$page_dashboard = "page_dash";  //control dediv parent main.php
+$page_dashboard = "page_dash" ." testCss";  //control dediv parent main.php
 
 require('../views/dashboard/fragments/navbar.php');
 require('../views/dashboard/services/verifAuth.php');
 
 ?>
 
-<h1><?=$descriptitle?> : <?php print_r($params[0]) ?> <?= var_dump($_SESSION["AUTH"]);?></h1>
+
+<div class="contenue_page">
+    <h1><?=$descriptitle?> : <?php print_r($params[0]) ?> <?= var_dump($_SESSION["AUTH"]);?></h1>
+</div>
