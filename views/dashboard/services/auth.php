@@ -15,5 +15,5 @@ if (!empty($result)) {
 
 }else{
 
-    header('Location:http://localhost/projets/model-04-2022/dashboard?msg=invalide');
+    header('Location:http://localhost/projets/model-04-2022/dashboard/?msg=invalide');
 }

@@ -11,7 +11,7 @@ $descriptitle = 'Accueil | Dashboard';
 $backUrlStyle = "../";
 $page_dashboard = "page_dash" ." testCss";  //control de div parent main.php
 $_SESSION["background_image"] =  'black-stars.jpg' ;    //fond d'ecran de div parent main.php
-
+// $backUrlStyle = (isset($_GET['msg'])) ? '../' : false;
 // require('../views/dashboard/fragments/navbar.php');
 require_once('../views/dashboard/services/deconnAuth.php');
 
