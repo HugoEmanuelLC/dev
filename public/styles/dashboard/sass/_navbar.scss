@@ -1,0 +1,41 @@
+.navbar{
+    position: relative;
+
+    ul li{
+        display: flex;
+    }
+    ul li a{
+        height: 100%;
+        width: 100%;
+        color: white;
+        padding: 5px;
+    }
+    ul li a:hover{
+        background-color: #173f5f;
+    }
+    .linkLogout{
+        width: 100%;
+        text-align: center;
+        position: absolute;
+            bottom: 0;
+    }
+    
+}
+@media screen and (max-width: 720px) {
+    .navbar{
+        ul{
+            display: flex;
+        }
+        li{
+            width: 100%;
+        }
+        .linkLogout{
+            // width: 25px;
+            // height: 100%;
+            text-align: center;
+            position: relative;
+                // right: 0;
+                // bottom: 0;
+        }
+    }
+}

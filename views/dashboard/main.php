@@ -1,5 +1,4 @@
 <?php 
-$page_dashboard = (isset($page_dashboard)) ? $page_dashboard : "page";
 $background_image = (isset($_SESSION["background_image"])) ? $_SESSION["background_image"] : false; 
 
 $ICON = IMAGES . 'images' . DIRECTORY_SEPARATOR . 'Loading_icon.gif' ;
@@ -24,9 +23,9 @@ $ICON = IMAGES . 'images' . DIRECTORY_SEPARATOR . 'Loading_icon.gif' ;
 </head>
 
 <body>
-<div class="<?= $page_dashboard; ?>" style="background-image: url('<?= $backUrlStyle; ?>public/images/dashboard/background/black-stars.jpg');">
+<div class="page_dash" style="background-image: url('<?= $backUrlStyle; ?>public/images/dashboard/background/');">
 
-    <?=$navbar = (isset($navbar)) ? $navbar : false ?>
+    <?=$navbar = (isset($navbar)) ? $navbar : null ?>
 
     <?= $content = (isset($content)) ? $content : "lien interrompue" ?>
 

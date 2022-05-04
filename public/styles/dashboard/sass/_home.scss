@@ -1,0 +1,10 @@
+.contenue_page{
+    flex: 1;
+    margin-left: 10px;
+}
+@media screen and (max-width: 720px) {
+    .contenue_page{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

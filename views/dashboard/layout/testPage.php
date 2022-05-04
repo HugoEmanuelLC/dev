@@ -13,4 +13,8 @@ require('../views/dashboard/services/verifAuth.php');
 
 ?>
 
-<h1><?=$descriptitle?> </h1>
+
+
+<div class="contenue_page blocs">
+    <h1><?=$descriptitle?> </h1>
+</div>

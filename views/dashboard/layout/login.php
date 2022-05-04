@@ -1,7 +1,7 @@
 <?php
 session_start();
 $msg = "";
-$http = "https://localhost/projets/model-04-2022/dashboard/login";
+$http = "https://localhost/projets/model-04-2022/dashboard/auth";
 
 //HEAD
 $keywords = 'mots cles, mots cles';
@@ -9,7 +9,7 @@ $description = 'description de la page';
 $descriptitle = 'Accueil | Dashboard';
 
 $backUrlStyle = "../";
-$page_dashboard = "page_dash" ." testCss";  //control de div parent main.php
+// $page_dashboard = "page_dash" ." testCss";  //control de div parent main.php
 $_SESSION["background_image"] =  'black-stars.jpg' ;    //fond d'ecran de div parent main.php
 // $backUrlStyle = (isset($_GET['msg'])) ? '../' : false;
 // require('../views/dashboard/fragments/navbar.php');

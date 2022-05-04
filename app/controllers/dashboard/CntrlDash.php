@@ -7,12 +7,12 @@ use App\controllers\Controller;
 class CntrlDash extends Controller
 {
 
-    public function accueil()
+    public function login()
     {
-        return $this->viewDash('dashboard.layout.accueil');
+        return $this->viewDash('dashboard.layout.login');
     }
 
-    public function login()
+    public function auth()
     {
         return $this->viewDash('dashboard.services.auth');
     }
