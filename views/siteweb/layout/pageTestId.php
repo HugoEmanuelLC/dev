@@ -5,7 +5,7 @@ $description = 'description de la page';
 $descriptitle = 'ID test'; 
 $back = "../";
 
-// require('../views/siteWeb/fragments/navbar.php');
+require('../views/siteWeb/fragments/navbar.php');
 
 ?>
 

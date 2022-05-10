@@ -5,6 +5,6 @@
 
 sleep(1);
 
-header('Location:http://localhost/projets/model-04-2022/dashboard/test/85');
+header('Location:http://localhost/projets/model-04-2022/dashboard/home');
 
 ?>

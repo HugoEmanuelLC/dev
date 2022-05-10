@@ -1,6 +1,8 @@
 .contenue_page{
     flex: 1;
     margin-left: 10px;
+    border-radius: 20px;
+    padding: 10px;
 }
 @media screen and (max-width: 720px) {
     .contenue_page{

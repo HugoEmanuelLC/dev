@@ -1,6 +1,4 @@
 <?php 
-$page_dashboard = (isset($page_dashboard)) ? $page_dashboard : "page";
-$background_image = (isset($_SESSION["background_image"])) ? $_SESSION["background_image"] : false; 
 
 $ICON = IMAGES . 'images' . DIRECTORY_SEPARATOR . 'Loading_icon.gif' ;
 ?>
@@ -27,7 +25,7 @@ $ICON = IMAGES . 'images' . DIRECTORY_SEPARATOR . 'Loading_icon.gif' ;
 </head>
 
 <body>
-<div class="<?= $page_dashboard; ?>" style="background-image: url('<?= $ICON; ?>');">
+<div class="page" style="background-image: url('<?= $ICON; ?>');">
 
     <?=$navbar = (isset($navbar)) ? $navbar : false ?>
 

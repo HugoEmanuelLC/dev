@@ -1,1 +1,1 @@
-*{margin:0;padding:0;box-sizing:border-box}.page{min-height:100vh;background-color:gray;color:#fff}/*# sourceMappingURL=style.css.map */
+*{margin:0;padding:0;box-sizing:border-box}.page{min-height:100vh;background-color:gray;color:#fff}.page .navbar{background-color:red}.navbar ul{display:flex}.navbar ul li{display:flex;width:100%}.navbar ul li a{height:100%;width:100%;padding:5px 10px;color:#fff}.navbar ul li a:hover{background-color:#173f5f}.navbar .active{background-color:#000;color:#fff}.navbar .linkLogout{text-align:center}/*# sourceMappingURL=style.css.map */

@@ -22,14 +22,14 @@ class CntrlDash extends Controller
         return $this->viewDash('dashboard.services.loading');
     }
 
+    public function home()
+    {
+        return $this->viewDash('dashboard.layout.home');
+    }
+
     public function testId(int $params)
     {
         return $this->viewDash('dashboard.layout.pageTestId', [$params]);
-    }
-
-    public function testPage()
-    {
-        return $this->viewDash('dashboard.layout.testPage');
     }
 
 }

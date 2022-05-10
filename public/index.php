@@ -23,7 +23,7 @@ $route->get('/dashboard', 'App\controllers\dashboard\Cntrldash@login');
 $route->get('/dashboard/logout', 'App\controllers\dashboard\Cntrldash@login');
 $route->post('/dashboard/auth', 'App\controllers\dashboard\Cntrldash@auth');
 $route->get('/dashboard/loading', 'App\controllers\dashboard\Cntrldash@loading');
+$route->get('/dashboard/home', 'App\controllers\dashboard\Cntrldash@home');
 $route->get('/dashboard/test/:params', 'App\controllers\dashboard\Cntrldash@testId');
-$route->get('/dashboard/testpage', 'App\controllers\dashboard\Cntrldash@testPage');
 
 $route->run();

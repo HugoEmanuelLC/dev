@@ -23,7 +23,7 @@ $ICON = IMAGES . 'images' . DIRECTORY_SEPARATOR . 'Loading_icon.gif' ;
 </head>
 
 <body>
-<div class="page_dash" style="background-image: url('<?= $backUrlStyle; ?>public/images/dashboard/background/');">
+<div class="page_dash" style="background-image: url('<?= $backUrlStyle; ?>public/images/dashboard/background/dynamic-wang-irn9H9-Kfq4-unsplash.jpg');">
 
     <?=$navbar = (isset($navbar)) ? $navbar : null ?>
 
