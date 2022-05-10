@@ -1,5 +1,5 @@
 <?php 
-$background_image = (isset($_SESSION["background_image"])) ? $_SESSION["background_image"] : false; 
+// $background_image = (isset($_SESSION["background_image"])) ? $_SESSION["background_image"] : false; 
 
 $ICON = IMAGES . 'images' . DIRECTORY_SEPARATOR . 'Loading_icon.gif' ;
 ?>

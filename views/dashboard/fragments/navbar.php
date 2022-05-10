@@ -21,7 +21,7 @@ $home = (isset($_GET['url']) && $_GET['url'] == 'dashboard/home') ? 'active' : f
 $errorTest = (isset($_GET['url']) && $_GET['url'] == "errorTest") ? 'active' : false;  //error test ( pas de route dans l'index )
 
 
-$navbar = '<div class="navbar blocs">
+$navbar = '<div class="navbar dash_shadow">
 <ul>
     <li><a class="'.$home.'" href="'.$back.$URLhome.'">HOME</a></li>
     <li><a class="'.$testid.'" href="'.$back.$URLtestID.'">ID TEST</a></li>

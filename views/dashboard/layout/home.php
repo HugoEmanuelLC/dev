@@ -15,6 +15,6 @@ require('../views/dashboard/services/verifAuth.php');
 
 
 
-<div class="contenue_page blocs">
+<div class="contenue_page dash_shadow">
     <h1><?=$descriptitle?> </h1>
 </div>
